@@ -1,0 +1,43 @@
+.featuredItem {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    flex: 1;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    /* width: 57%; */
+    padding: 51px;
+    margin: 42px 10px;
+    border-radius: 5%;
+    /* text-align: center; */
+}
+.fraturedTitle{
+font-size: 20px;
+}
+.fraturedMoneyContainer{
+margin: 10px 0px;
+display: flex;
+align-items: center;
+}
+.fraturedMoney{
+font-size: 30px;
+font-weight: 600;
+}
+.fraturedMoneyReat{
+display: flex;
+margin-left: 20px;
+align-items: center;
+
+}
+.featuredIcon{
+   font-size: 14px; 
+   margin-left: 5px;
+   color: gray;
+}
+.negative{
+   color: red; 
+}
+.featuredSub{
+font-size: 15px;
+color: gray;
+}

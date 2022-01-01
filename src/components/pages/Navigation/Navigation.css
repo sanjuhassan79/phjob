@@ -1,0 +1,49 @@
+.navbarmenu {
+    
+    cursor: pointer;
+   
+    border-radius: 10px;
+    padding: 20px 14px;
+    list-style: none;
+    margin: 0px 0px;
+  }
+.navbage {
+    
+    cursor: pointer;
+   
+    border-radius: 10px;
+    padding: 20px 14px;
+    list-style: none;
+    margin: 0px 0px;
+  }
+  
+  .navbarmenu.active,
+  .navbarmenu:hover {
+    border-bottom: 3px solid #33691e;
+  }
+
+  a.link {
+    text-decoration: none;
+    color: #555555;
+}
+
+
+
+.sidebarListItem {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 0px;
+  }
+  
+  .sidebarListItem.active,
+  .sidebarListItem:hover {
+    background-color: rgb(240, 240, 255);
+  }
+
+  a.link {
+    text-decoration: none;
+    color: #555555;
+}
