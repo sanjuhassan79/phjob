@@ -11,8 +11,8 @@ const [Search, setsearch] = useState('')
 useEffect(() => {
     fetch(
       Search
-      ? `http://localhost:5000/users/${Search}`
-      : 'http://localhost:5000/users'
+      ? `https://mysterious-fjord-19391.herokuapp.com/users/${Search}`
+      : 'https://mysterious-fjord-19391.herokuapp.com/users'
       
       
       
@@ -24,7 +24,7 @@ useEffect(() => {
 
 const handleDelete=(id)=>{
 
-    fetch(`http://localhost:5000/users/${id}`,{
+    fetch(`https://mysterious-fjord-19391.herokuapp.com/users/${id}`,{
         method:'DELETE'
     })
     .then(res=>res.json())
@@ -50,7 +50,7 @@ const handleDelete=(id)=>{
 
 // const handleStatus=(id)=>{
    
-//     fetch(`http://localhost:5000/users/${id}`,{
+//     fetch(`https://mysterious-fjord-19391.herokuapp.com/users/${id}`,{
     
 //     method:"PUT",
 //     headers:{"content-type":"application/json"},

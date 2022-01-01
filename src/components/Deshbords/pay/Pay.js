@@ -8,7 +8,7 @@ const Pay = () => {
     const [product,setProduct]=useState([])
     
 useEffect(() => {
-    fetch('http://localhost:5000/userss')
+    fetch('https://mysterious-fjord-19391.herokuapp.com/userss')
     .then(res=>res.json())
     .then(data=>setProduct(data))
  }, []);

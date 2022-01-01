@@ -10,7 +10,7 @@ const [items,setitem]=useState({})
 // const [product,setProduct]=useState([])
     
 useEffect(() => {
-    fetch(`http://localhost:5000/users/${emaul}`)
+    fetch(`https://mysterious-fjord-19391.herokuapp.com/users/${emaul}`)
     .then(res=>res.json())
     .then(data=>setitem(data))
  }, [emaul]);
