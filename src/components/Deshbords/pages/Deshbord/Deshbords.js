@@ -181,7 +181,7 @@ console.log(user.email);
             <div className="topbar">
                 <div className="topbarWrapper">
                     <div className="topLeft">
-                        <span className="logo__des">Deshbords</span>
+                        <span className="logo__des">North Bengal Rider</span>
                     </div>
                     <div className="topRight">
 

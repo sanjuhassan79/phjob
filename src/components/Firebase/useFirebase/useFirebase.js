@@ -33,7 +33,7 @@ const useFirebase = () => {
                 }).then(() => {
                 }).catch((error) => {
                 });
-                history('/Profile');
+                history('/Deshbords/Profile');
             })
             .catch((error) => {
                 setAuthError(error.message);

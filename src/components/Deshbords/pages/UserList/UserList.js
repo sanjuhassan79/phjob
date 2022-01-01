@@ -7,20 +7,27 @@ const UserList  = () => {
 const [costomer,setcostomer]=useState([])
 const [isDelete, setisDelete]=useState(null)
 const [Search, setsearch] = useState('')
-
+const [page, setPage] = useState(0)
+const [pageCount, setPageCount] = useState(0)
+const size=10
 useEffect(() => {
     fetch(
       Search
       ? `https://mysterious-fjord-19391.herokuapp.com/users/${Search}`
-      : 'https://mysterious-fjord-19391.herokuapp.com/users'
+      : `https://mysterious-fjord-19391.herokuapp.com/users?page=${page}&&size=${size}`
       
       
       
       
       )
     .then(res=>res.json())
-    .then(data=>setcostomer(data))
-}, [isDelete,costomer,Search]);
+    .then(data=>{
+      setcostomer(data.result)
+    const count=data.count;
+    const pageNumber=Math.ceil(count/size)
+    setPageCount(pageNumber);
+    })
+}, [isDelete,costomer,Search,page]);
 
 const handleDelete=(id)=>{
 
@@ -131,7 +138,14 @@ aria-label="Search"/> <br />
           
         </tbody>
       </Table>
-        
+        <div className="pagination">
+         {
+            [...Array(pageCount).keys()].map(num=><button
+            key={num}
+            onClick={()=>setPage(num)}
+            >{num}</button>)
+         }
+        </div>
         </>
     );
 };
